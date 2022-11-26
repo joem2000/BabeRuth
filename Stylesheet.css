@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(19, 16, 16, 0.89);
+    background-color: #ff4244;
 }
 
 .header {
@@ -12,64 +12,170 @@ h2 {
     text-align: center;
 }
 
-.center {
-    background-color: rgba(0, 60, 255, 0.94);
-    padding-bottom: 30px;
-    width: 17%;
-    border: 2px solid white;
+summary {
     font-size: 25px;
+}
+
+.center {
+    border-radius: 69px;
+    background: linear-gradient(145deg, #fd1111, #f76060);
+    box-shadow:  5px 5px 9px #4c3d3d,
+        -5px -5px 9px #f3aaaa;
+    width: 15%;
+    padding-top: 30px;
+    padding-left:7px;
+    padding-bottom:50px;
 }
 
 #coachesB {
     background: none;
     border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
 }
-#coachesB:hover {
-    background-color: white;
+
+#coachesB::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
+
+#coachesB:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 #teamB {
     background: none;
     border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
 }
-#teamB:hover {
-    background-color: white;
+#teamB::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#teamB:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #expectB {
     background: none;
     border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
 }
 
-#expectB:hover {
-    background-color: white;
+#expectB::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#expectB:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #home {
     background: none;
     border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
 }
 
-#home:hover {
-    background-color: white;
+#home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
+
+#home:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 #signUp {
     background: none;
     border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
 }
 
-#signUp:hover {
-    background-color: white;
+#signUp::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
+
+#signUp:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 .table {
+    text-align: center;
     display: flex;
     justify-content: center;
     margin:auto;
-    color: white;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #fd1111, #f76060);
+    box-shadow:  5px 5px 9px #4c3d3d,
+        -5px -5px 9px #f3aaaa;
     width: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border: 2px solid white;
+    padding-top: 30px;
+    padding-bottom:30px;
+    position: fixed;
+    top:25px;
+    right:300px;
+    top: 200px;
 }
