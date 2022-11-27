@@ -1,6 +1,6 @@
-/*function funCoaches() {
-    window.open("coaches.html");
-}*/
+function funCoaches() {
+ 
+}
 
 function funTeam() {
 
@@ -11,7 +11,7 @@ function funExpect() {
 }
 
 function funHome() {
-    history.back();
+    document.location.href="/";
 }
 
 function funSign() {

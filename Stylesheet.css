@@ -25,6 +25,7 @@ summary {
     padding-top: 30px;
     padding-left:7px;
     padding-bottom:50px;
+    
 }
 
 #coachesB {
@@ -54,7 +55,6 @@ summary {
     transform-origin: bottom left;
 }
 
-
 #teamB {
     background: none;
     border: none;
@@ -63,6 +63,7 @@ summary {
     position: relative;
     color: #020202;
 }
+
 #teamB::after {
     content: '';
     position: absolute;
@@ -134,7 +135,6 @@ summary {
     transform-origin: bottom left;
 }
 
-
 #signUp {
     background: none;
     border: none;
@@ -161,6 +161,59 @@ summary {
     transform-origin: bottom left;
 }
 
+#joeM {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#joeM::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#joeM:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#atrev {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#atrev::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#atrev:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .table {
     text-align: center;
@@ -178,4 +231,12 @@ summary {
     top:25px;
     right:300px;
     top: 200px;
+}
+
+img {
+    position: absolute;
+    top:25px;
+    right:300px;
+    left: 514px;
+    top: 170px;
 }
