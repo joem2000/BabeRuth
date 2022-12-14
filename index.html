@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Stylesheet.css">
-    <link rel="icon" href="baseball.jpg">
+    <link rel="icon" href="img/baseball.jpg">
 
     <title>New Hartford Babe Ruth</title>
 
@@ -23,15 +23,23 @@
     <h2><u>Welcome to the New Hartford Babe Ruth Website!</u></h2>
 
     <div class="center">
-        <button id="home" onclick="funHome()" style="font-size:25px"><b>Home Page</b></button><br><br>
-        <button id="signUp" onclick="funSign()" style="font-size:25px"><b>Sign up</b></button><br><br>
+        <a href="index.html" target="_self"><button id="home" style="font-size:25px"><b>Home Page</b></button></a><br><br>
+        <a href="signUp.html" target="_self"><button id="signUp" style="font-size:25px"><b>Sign up</b></button></a><br><br>
         <details>
             <summary><b>About Us</b></summary>
             <a href="coaches.html" target="_self"><button id="coachesB">Coaches</button></a><br>
-            <button id="teamB" onclick="funTeam()">Team</button><br>
-            <button id="expectB" onclick="funExpect()">What to Expect</button>
+            <a href="team.html" target="_self"><button id="teamB">Team</button></a>
+            <a href="expectB.html" target="_self"><button id="expectB">What to Expect</button></a>
         </details>
     </div>
+
+    <div class="team-pic">
+    <img src="img/team-pic.jpg" alt="Team Picture" width="600" height="350">
+    </div>
+    <br>
+
+    <p style="text-align:center"></p>
+
 
 <script src="script.js"></script>
 
