@@ -84,7 +84,7 @@ summary {
     transform-origin: bottom left;
 }
 
-#expectB {
+#expect {
     background: none;
     border: none;
     font-size: 20px;
@@ -93,7 +93,7 @@ summary {
     color: #020202;
 }
 
-#expectB::after {
+#expect::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -106,7 +106,7 @@ summary {
     transition: transform 0.25s ease-out;
 }
 
-#expectB:hover::after {
+#expect:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -263,6 +263,12 @@ summary {
    border: 5px solid rgb(255, 255, 255);
 }
 
+.coaching-pic {
+    position: absolute;
+    top:-45px;
+    left:-165px;
+}
+
 img {
     position: absolute;
     top:25px;
@@ -275,7 +281,7 @@ img {
 
 .form-style-1 {
 	margin: auto;
-    top: 150px;
+    top: 120px;
     left: 420px;
 	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     position:fixed;
