@@ -1,0 +1,377 @@
+body {
+    background-color: #ff4244;
+} 
+
+.header {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+summary {
+    font-size: 25px;
+}
+
+.center {
+    border-radius: 69px;
+    background: linear-gradient(145deg, #fd1111, #f76060);
+    box-shadow:  5px 5px 9px #4c3d3d,
+        -5px -5px 9px #f3aaaa;
+    width: 15%;
+    padding-top: 30px;
+    padding-left:7px;
+    padding-bottom:50px;
+    
+}
+
+/* Start of buttons */
+
+#coachesB {
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#coachesB::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#coachesB:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#teamB {
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#teamB::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#teamB:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#expect {
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#expect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#expect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#home {
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#home:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#signUp {
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#signUp::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#signUp:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#joeM {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#joeM::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#joeM:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#atrev {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#atrev::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#atrev:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* End of buttons*/ 
+
+.table {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #fd1111, #f76060);
+    box-shadow:  5px 5px 9px #4c3d3d,
+        -5px -5px 9px #f3aaaa;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom:30px;
+    position: fixed;
+    top:25px;
+    right:300px;
+    top: 200px;
+}
+
+.table-team {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    border-radius: 69px;
+    background: linear-gradient(145deg, #fd1111, #f76060);
+    box-shadow:  5px 5px 9px #4c3d3d,
+        -5px -5px 9px #f3aaaa;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 2px;
+    padding-bottom:15px;
+    position:absolute;
+    top: 175px;
+    left: 280px;
+    right:300px
+}
+
+.team-pic {
+   position: absolute;
+   top:20px;
+   left:-165px;
+   border: 5px solid rgb(255, 255, 255);
+}
+
+.coaching-pic {
+    position: absolute;
+    top:-45px;
+    left:-165px;
+}
+
+img {
+    position: absolute;
+    top:25px;
+    right:300px;
+    left: 514px;
+    top: 170px;
+    border: 5px double rgb(248, 246, 246);
+}
+
+/* Sign up form below */
+
+
+.form-style-1 {
+	margin: auto;
+    top: 120px;
+    left: 420px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    position:fixed;
+}
+
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+.form-style-1 label {
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus {
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+
+.form-style-1 .field-divided {
+	width: 49%;
+}
+
+.form-style-1 .field-long {
+	width: 100%;
+}
+.form-style-1 .field-select {
+	width: 100%;
+}
+.form-style-1 .field-textarea {
+	height: 100px;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button] {
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover {
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+.form-style-1 .required {
+	color:rgb(253, 248, 248);
+}
+
+/* End of Sign up form */
