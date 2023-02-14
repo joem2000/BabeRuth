@@ -30,6 +30,8 @@ summary {
 
 /* Start of buttons */
 
+/* Coaches buttons */
+
 #coachesB {
     background: none;
     border: none;
@@ -56,6 +58,8 @@ summary {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* Team button */
 
 #teamB {
     background: none;
@@ -84,6 +88,8 @@ summary {
     transform-origin: bottom left;
 }
 
+/* What to expect button */
+
 #expect {
     background: none;
     border: none;
@@ -111,6 +117,8 @@ summary {
     transform-origin: bottom left;
 }
 
+/* Home page button */
+
 #home {
     background: none;
     border: none;
@@ -137,6 +145,8 @@ summary {
     transform-origin: bottom left;
 }
 
+/* Sign up button */
+
 #signUp {
     background: none;
     border: none;
@@ -162,6 +172,8 @@ summary {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* Joe button */
 
 #joeM {
     font-size: 15px;;
@@ -190,6 +202,8 @@ summary {
     transform-origin: bottom left;
 }
 
+/* Atrev button */
+
 #atrev {
     font-size: 15px;;
     background: none;
@@ -217,7 +231,7 @@ summary {
     transform-origin: bottom left;
 }
 
-/* End of buttons*/ 
+/* End of buttons */ 
 
 .table {
     text-align: center;
@@ -279,7 +293,6 @@ img {
 }
 
 /* Sign up form below */
-
 
 .form-style-1 {
 	margin: auto;
