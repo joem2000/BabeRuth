@@ -260,6 +260,64 @@ summary {
     transform-origin: bottom left;
 }
 
+/* Derek button */
+
+#derek {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#derek::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#derek:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Dylan buttons */
+
+#dylan {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#dylan::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#dylan:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* End of buttons */ 
 
 .table {
