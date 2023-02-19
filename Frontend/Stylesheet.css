@@ -231,6 +231,35 @@ summary {
     transform-origin: bottom left;
 }
 
+/* Jack button */
+
+#jack {
+    font-size: 15px;;
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    color: #020202;
+}
+
+#jack::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#jack:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 /* End of buttons */ 
 
 .table {
