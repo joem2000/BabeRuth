@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,12 +20,12 @@
 <hr>
 <hr>
     
-    <h2><u>Sign Up</u></h2>
+    <!-- <h2><u>Sign Up</u></h2> -->
    
 
     <div class="center">
         <a href="index.html" target="_self"><button id="home" style="font-size:25px"><b>Home Page</b></button></a><br><br>
-        <a href="signUp.html" target="_self"><button id="signUp" style="font-size:25px"><b>Sign up</b></button></a><br><br>
+        <a href="signUp.php" target="_self"><button id="signUp" style="font-size:25px"><b>Sign up</b></button></a><br><br>
         <details>
             <summary><b>About Us</b></summary>
             <a href="coaches.html" target="_self"><button id="coachesB">Coaches</button></a><br>
@@ -74,4 +74,4 @@
 <script src="script.js"></script>
 
 </body>
-</html> -->
+</html>
