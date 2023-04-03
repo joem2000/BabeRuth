@@ -1,3 +1,30 @@
+<?php
+$host = "localhost"; // Your database host
+$port = "5432"; // Your database port
+$dbname = "Capstone"; // Your database name
+$user = "postgres"; // Your database username
+$password = "ChamplinWildcat8085!"; // Your database password
+
+// Create a database connection
+$db = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+
+// Check if the connection was successful
+if(!$db){
+   echo "Error : Unable to open database\n";
+} else {
+   echo "Opened database successfully\n";
+}
+
+
+
+// Close the database connection
+pg_close($db);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
