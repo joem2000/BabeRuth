@@ -1,30 +1,3 @@
-<?php
-$host = "localhost"; // Your database host
-$port = "5432"; // Your database port
-$dbname = "Capstone"; // Your database name
-$user = "postgres"; // Your database username
-$password = "ChamplinWildcat8085!"; // Your database password
-
-// Create a database connection
-$db = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
-
-// Check if the connection was successful
-if(!$db){
-   echo "Error : Unable to open database\n";
-} else {
-   echo "Opened database successfully\n";
-}
-
-
-
-// Close the database connection
-pg_close($db);
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +25,7 @@ pg_close($db);
 
     <div class="center">
         <a href="index.html" target="_self"><button id="home" style="font-size:25px"><b>Home Page</b></button></a><br><br>
-        <a href="signUp.php" target="_self"><button id="signUp" style="font-size:25px"><b>Sign up</b></button></a><br><br>
+        <a href="signUp.html" target="_self"><button id="signUp" style="font-size:25px"><b>Sign up</b></button></a><br><br>
         <details>
             <summary><b>About Us</b></summary>
             <a href="coaches.html" target="_self"><button id="coachesB">Coaches</button></a><br>
@@ -61,38 +34,41 @@ pg_close($db);
         </details>
     </div>
     
-    <form class="form">
+    <form class="form" action="connect.php" method="post">
         <ul class="form-style-1">
             <li>
                 <label>Player Name <span class="required">*</span></label>
-                    <input type="text" id="first" name="field1" class="field-divided" placeholder="First" /> 
-                        <input type="text" id="last" name="field2" class="field-divided" placeholder="Last" />
+                    <input type="text" id="first" name="firstName" class="field-divided" placeholder="First" /> 
+                        <input type="text" id="last" name="lastName" class="field-divided" placeholder="Last" />
             </li>
             <li>
                 <label>Age <span class="required">*</span></label>
-                <input name="field4" id="ageBtn" class="field-select" placeholder="12-16"/>
+                    <input name="age" id="ageBtn" class="field-select" placeholder="13-16"/>
             </li>
             <li>
                 <label>Date of Birth <span class="required">*</span></label>
-                <input type="text" id="DOB" placeholder="MM/DD/YYYY" name="field1" class="field-long" />
+                    <input type="text" id="DOB" placeholder="MM/DD/YYYY" name="dob" class="field-long" />
             </li>
             <li>
                 <label>Parent/Guardian <span class="required" >*</span></label>
-                    <input type="text" id="parent-first" name="field1" class="field-divided" placeholder="First" />
-                        <input type="text" id="parent-last" name="field2" class="field-divided" placeholder="Last" />
+                    <input type="text" id="parent-first" name="parentFirstName" class="field-divided" placeholder="First" />
+                        <input type="text" id="parent-last" name="parentLastName" class="field-divided" placeholder="Last" />
             </li>
             <li>
                 <label>Email <span class="required">*</span></label>
-                <input type="email" id="email" name="field3" class="field-long" />
+                    <input type="email" id="email" name="email" class="field-long" placeholder="firstlast@email.com"/>
             </li>
             <li>
                 <label>Phone Number <span class="required">*</span></label>
-                <input type="tel" id="phone-number" name="field1" class="field-long" />
+                    <input type="tel" id="phone-number" name="phoneNumber" class="field-long" placeholder="123-456-7890"/>
+            </li>
+            <li>
+                <input type="button" class="btn" onclick=signUp() value="Submit"> 
             </li>
         </ul>        
     </form>
 
-        <input type="button" class="btn" onclick="signUp()" value="Submit">  
+         
 
     <p id="demo"></p>
 

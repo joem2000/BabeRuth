@@ -479,14 +479,15 @@ select {
 }
 
 .form-style-1 input[type=submit], .form-style-1 input[type=button] {
-	background: #4B99AD;
+	background: #ffffff;
 	padding: 8px 15px 8px 15px;
 	border: none;
-	color: #fff;
+    top:110%;
+	color: #000000;
 }
 
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover {
-	background: #4691A4;
+	background: #acaaaa;
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
